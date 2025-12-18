@@ -1,10 +1,10 @@
-SOURCE = src/main.cpp
+SOURCE = src/main.c
 OUTPUT = main
 FLAGS = -Wall
 LIBRARY = 
 BUILDS = build
-VERSION = c++11
-COMPILER = clang++
+VERSION = c99
+COMPILER = clang
 ARGUMENT = test.xbc
 
 all:
@@ -14,3 +14,7 @@ run:
 cnr:
 	$(COMPILER) $(SOURCE) $(FLAGS) -std=$(VERSION) $(LIBRARY) -o $(BUILDS)/$(OUTPUT)
 	./$(BUILDS)/$(OUTPUT) $(ARGUMENT)
+rm:
+	rm $(BUILD)/$(OUTPUT)
+edit:
+	vim $(BUILD)/$(OUTPUT)

@@ -1,7 +1,4 @@
-clang src/main.c -Wall -std=c99 -lc -o build/main
-./build/main test.xbc
-program name ./build/main 
-source code lines 9
-argument 0's value is [./build/main]
-argument 1's value is [test.xbc]
-hello
+src/main.c:7:1: warning: non-void function does not return a value [-Wreturn-type]
+    7 | }
+      | ^
+1 warning generated.

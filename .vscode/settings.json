@@ -1,9 +1,0 @@
-{
-    "makefile.launchConfigurations": [
-        {
-            "cwd": "/workspaces/xenon/build",
-            "binaryPath": "/workspaces/xenon/build/main",
-            "binaryArgs": []
-        }
-    ]
-}
